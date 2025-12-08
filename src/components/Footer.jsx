@@ -8,8 +8,7 @@ const Footer = ({ language }) => {
   return (
     <footer className="app-footer">
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Andi Agung. {t.footerRights || "All rights reserved."}</p>
-        <p className="version">v1.0.0</p>
+        <p>&copy; {new Date().getFullYear()}Author: Andi Agung. {t.footerRights || "All rights reserved."}</p>
       </div>
     </footer>
   );
