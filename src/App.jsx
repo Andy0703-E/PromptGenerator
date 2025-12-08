@@ -4,6 +4,7 @@ import JsonPreview from './components/JsonPreview';
 import { GenerateModal } from './components/Modals';
 import { generateWithGroq } from './utils/groqService';
 import { translations } from './utils/translations';
+import Footer from './components/Footer';
 import './App.css';
 
 const TEMPLATES = {
@@ -176,6 +177,8 @@ function App() {
           <JsonPreview data={formData} language={language} />
         </div>
       </main>
+
+      <Footer language={language} />
 
       <GenerateModal
         isOpen={isGenerateOpen}
