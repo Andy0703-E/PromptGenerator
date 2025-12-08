@@ -18,7 +18,7 @@ const Footer = ({ language }) => {
           <ul>
             <li>
               <a 
-                href="https://github.com/yourusername/json-prompt-builder" 
+                href="https://github.com/andy0703-E/PromptGenerator" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -58,7 +58,7 @@ const Footer = ({ language }) => {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} JSON Prompt Builder. {t.footerRights || "All rights reserved."}</p>
+        <p>&copy; {new Date().getFullYear()} Andi Agung. {t.footerRights || "All rights reserved."}</p>
         <p className="version">v1.0.0</p>
       </div>
     </footer>
