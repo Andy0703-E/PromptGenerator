@@ -1,5 +1,6 @@
 .footer-bottom {
   width: 100%;
+  max-width: 1600px; /* Maksimal lebar untuk layar besar */
   margin: 2rem auto 0;
   padding: 1.5rem 2rem;
   display: flex;
