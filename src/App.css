@@ -1,7 +1,7 @@
 .app-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--bg-app);
 }
 
@@ -13,12 +13,14 @@
   padding: 0 var(--spacing-xl);
   background: var(--bg-panel);
   z-index: 10;
+  box-shadow: var(--shadow-sm);
 }
 
 .logo {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 
 .logo img {
@@ -36,6 +38,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .template-selector {
@@ -45,6 +48,7 @@
   padding: 6px;
   border-radius: var(--radius-md);
   border: 1px solid transparent;
+  flex-shrink: 0;
 }
 
 .nav-btn {
@@ -131,12 +135,50 @@
   width: 6px;
 }
 
+/* Footer styles */
+.app-footer {
+  background: var(--bg-panel);
+  border-top: 1px solid var(--border-subtle);
+  padding: var(--spacing-md) 0;
+  margin-top: auto;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.footer-bottom p {
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
+  background: rgba(30, 41, 59, 0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .app-main {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 1024px) {
   .app-main {
     flex-direction: column;
-    padding: var(--spacing-md);
-    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    gap: var(--spacing-lg);
+  }
+
+  .editor-column,
+  .preview-column {
+    width: 100%;
   }
 
   .preview-column {
@@ -189,8 +231,8 @@
   }
 
   .app-main {
-    padding: var(--spacing-sm);
-    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    gap: var(--spacing-md);
   }
 
   .editor-column,
@@ -205,9 +247,19 @@
   .subtitle {
     font-size: 0.85rem;
   }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
+  .app-header {
+    padding: 0 var(--spacing-sm);
+  }
+
   .logo-text {
     font-size: 1rem;
   }
@@ -225,5 +277,27 @@
   .nav-btn {
     padding: 0.35rem 0.5rem;
     font-size: 0.8rem;
+  }
+
+  .app-main {
+    padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
+  }
+
+  .editor-column,
+  .preview-column {
+    padding: var(--spacing-sm);
+  }
+
+  .panel-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom {
+    padding: 0 var(--spacing-md);
   }
 }
