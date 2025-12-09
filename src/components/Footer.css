@@ -9,7 +9,7 @@
   font-size: 0.9rem;
 }
 
-.footer-bottom,.version  {
+.footer-bottom, p  {
   font-family: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
   background: rgba(30, 41, 59, 0.5);
   padding: 0.25rem 0.75rem;
