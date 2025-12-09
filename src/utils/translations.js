@@ -65,6 +65,9 @@ export const translations = {
         addItem: "Add",
         removeItem: "Remove Item",
 
+        // Footer
+        footerRights: "All rights reserved.",
+
         // Errors
         missingApiKey: "Missing VITE_GROQ_API_KEY in .env file! Please configure it on the server.",
         generationFailed: "Generation Failed"
@@ -98,7 +101,7 @@ export const translations = {
         // Tone Options
         toneProfessional: "Profesional",
         toneFriendly: "Ramah",
-        toneSarcastic: "Sarkastik",
+        toneSarcastic: "Sarkastis",
         toneConcise: "Ringkas",
 
         // Style Options
@@ -135,6 +138,9 @@ export const translations = {
         // Array Actions
         addItem: "Tambah",
         removeItem: "Hapus Item",
+
+        // Footer
+        footerRights: "Hak cipta dilindungi.",
 
         // Errors
         missingApiKey: "VITE_GROQ_API_KEY tidak ada di file .env! Silakan konfigurasikan di server.",
